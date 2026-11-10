@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadatos SEO y Open Graph -->
+    <title>Santiago Gonzalez | Portfolio UX/UI & Dev</title>
+    <meta name="description" content="Portfolio de Santiago Gonzalez, estudiante de Licenciatura en Sistemas en FCyT UADER.">
+    <meta property="og:title" content="Santiago Gonzalez | Portfolio">
+    <meta property="og:description" content="Desarrollador Web y estudiante de Sistemas">
+    <meta property="og:image" content="link-a-tu-imagen.jpg">
+    <meta name="theme-color" content="#f0f4f8">
+    
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Enlace de accesibilidad para teclado -->
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
+
+    <input class="theme-toggle" type="checkbox" id="theme-toggle">
+
+    <!-- 1. HEADER -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">SG</div>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <label class="theme-switch" for="theme-toggle">
+                <span class="theme-switch-icon" aria-hidden="true"></span>
+                <span class="theme-switch-text">Modo oscuro</span>
+            </label>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- 2. HERO -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Desarrollo web · UX/UI</span>
+                <h1>Hola, soy Santiago Gonzalez.</h1>
+                <p class="subtitle">Estudiante de 2° año de la Licenciatura en Sistemas en UADER FCyT, enfocado en el desarrollo web y resolución de problemas.</p>
+                <div class="hero-ctas">
+                    <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactame</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. MÉTRICAS -->
+        <section id="metricas" class="section">
+            <div class="grid-metricas">
+                <article class="card-metrica">
+                    <h3>02</h3>
+                    <p>Años de estudio</p>
+                </article>
+                <article class="card-metrica">
+                    <h3>05+</h3>
+                    <p>Tecnologías base</p>
+                </article>
+                <article class="card-metrica">
+                    <h3>03</h3>
+                    <p>Proyectos creados</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. SKILLS -->
+        <section id="skills" class="section">
+            <h2>Skills Técnicos</h2>
+            <div class="grid-skills">
+                <article class="card-skill">
+                    <h3>Front-end</h3>
+                    <p>Desarrollo de interfaces accesibles y responsivas.</p>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span><span>Tailwind</span>
+                    </div>
+                </article>
+                <article class="card-skill">
+                    <h3>Back-end</h3>
+                    <p>Lógica de negocio y consumo de APIs.</p>
+                    <div class="tags">
+                        <span>Python</span><span>Node.js</span><span>Java</span>
+                    </div>
+                </article>
+                <article class="card-skill">
+                    <h3>Herramientas</h3>
+                    <p>Versionado y entornos de desarrollo.</p>
+                    <div class="tags">
+                        <span>Git</span><span>GitHub</span><span>VS Code</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+       <!-- 5. PROYECTOS -->
+        <section id="proyectos" class="section">
+            <h2>Proyectos Destacados</h2>
+            <div class="grid-proyectos">
+                
+                <!-- PROYECTO 1: CASO DE ESTUDIO (Obligatorio) -->
+                <article class="card-proyecto">
+                    <div class="project-visual project-visual--ux" role="img" aria-label="Diseño del portfolio UX/UI">
+                        <span>UX/UI</span>
+                    </div>
+                    <h3>Portfolio UX/UI (Caso de Estudio)</h3>
+                    <p>Diseño y maquetación de mi portfolio personal enfocado en accesibilidad y performance.</p>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span><span>Figma</span>
+                    </div>
+                    <a href="caso-estudio.html" class="link-proyecto">Leer caso de estudio</a>
+                    <a href="https://github.com/santiagogo8911/TU-REPO-DEL-PORTFOLIO" class="link-proyecto" target="_blank" rel="noopener noreferrer" style="margin-left: 10px;">Ver repo</a>
+                </article>
+                
+                <!-- PROYECTO 2: CHECKOUT SEGUROS -->
+                <article class="card-proyecto">
+                    <!-- Sacale captura al TP de seguros y guardala como seguros.webp -->
+                    <img class="project-image" src="seguros.webp" alt="Frontend Checkout de Seguros" width="400" height="200" loading="lazy">
+                    <h3>Checkout de Seguros</h3>
+                    <p>Desarrollo del front-end para el flujo de contratación y checkout de una plataforma de seguros.</p>
+                    <div class="tags">
+                        <span>Front-end</span><span>UI/UX</span>
+                    </div>
+                    <a href="https://github.com/santiagogo8911/tp-seguros" class="link-proyecto" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+                </article>
+                
+                <!-- PROYECTO 3: COFFEA LANDING -->
+                <article class="card-proyecto">
+                    <!-- Sacale captura al TP de la cafetería y guardala como coffea.webp -->
+                    <img class="project-image" src="coffea.webp" alt="Landing page de cafetería" width="400" height="200" loading="lazy">
+                    <h3>Coffea Landing Page</h3>
+                    <p>Maquetación estática de una landing page para una cafetería, desarrollada estrictamente bajo requerimientos de PRD.</p>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span>
+                    </div>
+                    <a href="https://github.com/santiagogo8911/coffea-landing" class="link-proyecto" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+                </article>
+                
+            </div>
+        </section>
+
+        <!-- 6. EXPERIENCIA -->
+        <section id="experiencia" class="section">
+            <h2>Experiencia y Formación</h2>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <span class="date">Julio 2023 - Septiembre 2023</span>
+                    <h3>Pasantia Nexon</h3>
+                    <p>Concordia, Entre Rios</p>
+                    <ul>
+                        <li>Limpieza y mantenimiento de computadoras, clonacion de discos, instalacion de Linux (Ubuntu, Lubuntu, Kubuntu, etc)</li>
+                    </ul>
+                </article>
+                <article class="timeline-item">
+                    <span class="date">Febrero 2025 - Presente </span>
+                    <h3>Estudiante Lic. en Sistemas</h3>
+                    <p>FCyT Concepción del Uruguay (UADER)</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 7. SOBRE MÍ -->
+        <section id="sobre-mi" class="section grid-sobre-mi">
+            <div class="sobre-mi-img">
+    <img class="profile-image" src="perfil2.webp" alt="Retrato de Santiago Gonzalez" loading="lazy">
+</div>
+            <div class="sobre-mi-texto">
+                <h2>Sobre mí</h2>
+                <p>Soy un desarrollador en formación, buscando oportunidades donde poder aplicar mis conocimientos y seguir aprendiendo en un ambiente profesional </p>
+                <div class="principios">
+                    <article class="principio"> Orientado a objetivos</article>
+                    <article class="principio"> Aprendizaje continuo</article>
+                    <article class="principio"> Trabajo en equipo</article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CONTACTO -->
+        <section id="contacto" class="section section-contacto">
+            <h2>¿Trabajamos juntos?</h2>
+            <p>Actualmente disponible para prácticas profesionales o roles junior en desarrollo.</p>
+            <div class="hero-ctas" style="justify-content: center; margin-top: 2rem;">
+                <!-- Cambiá el mail -->
+                <a href="mailto:gonzalezzsantiago35@gmail.com" class="btn btn-primary">Enviame un email</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Santiago Gonzalez. Desarrollado con HTML y CSS.</p>
+        <div class="footer-links">
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
